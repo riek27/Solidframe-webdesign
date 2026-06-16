@@ -926,6 +926,32 @@
           newsletterForm.submit();
         });
       });
+      // FAQ Accordion Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const faqButtons = document.querySelectorAll('.faq-question');
+
+  faqButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const faqItem = this.closest('.faq-item');
+      const toggle = this.querySelector('.faq-toggle');
+      const isOpen = faqItem.classList.contains('open');
+
+      // Close all other items (optional, remove if you want multiple open)
+      // document.querySelectorAll('.faq-item.open').forEach(item => {
+      //   if (item !== faqItem) {
+      //     item.classList.remove('open');
+      //     item.querySelector('.faq-toggle').textContent = '+';
+      //   }
+      // });
+
+      // Toggle current item
+      faqItem.classList.toggle('open');
+      if (toggle) {
+        toggle.textContent = isOpen ? '+' : '−';
+      }
+    });
+  });
+});
     }
   </script>
 </body>
