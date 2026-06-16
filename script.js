@@ -1,6 +1,6 @@
 /**
  * Solidframe Web - Global JavaScript
- * Includes robust Netlify form handling + fixed FAQ accordion
+ * Dynamic FAQ accordion (works on every page), Netlify forms, mobile menu, etc.
  */
 (function () {
   'use strict';
@@ -53,27 +53,38 @@
     });
   });
 
-  /* ---- FAQ Accordion (UNIFIED - uses .open class) ---- */
-  document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', function() {
-      const faqItem = this.closest('.faq-item');
-      const toggle = this.querySelector('.faq-toggle');
-      const isOpen = faqItem.classList.contains('open');
-      // Optional: close other FAQ items (remove if you want multiple open)
-      // document.querySelectorAll('.faq-item.open').forEach(item => {
-      //   if (item !== faqItem) {
-      //     item.classList.remove('open');
-      //     item.querySelector('.faq-toggle').textContent = '+';
-      //   }
-      // });
-      faqItem.classList.toggle('open');
-      if (toggle) {
-        toggle.textContent = isOpen ? '+' : '−';
-      }
-    });
-  });
+  /* ---- FAQ Accordion (DYNAMIC HEIGHT – no 600px limit) ---- */
+  function initFAQ() {
+    document.querySelectorAll('.faq-question').forEach(button => {
+      // Remove any previous listener by cloning
+      const newButton = button.cloneNode(true);
+      button.parentNode.replaceChild(newButton, button);
 
-  /* ---- Blog Read More / Less ---- */
+      newButton.addEventListener('click', function() {
+        const faqItem = this.closest('.faq-item');
+        const toggle = this.querySelector('.faq-toggle');
+        const content = faqItem.querySelector('.faq-content');
+        if (!content) return;
+
+        const isOpen = faqItem.classList.contains('open');
+
+        if (!isOpen) {
+          faqItem.classList.add('open');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          if (toggle) toggle.textContent = '−';
+        } else {
+          faqItem.classList.remove('open');
+          content.style.maxHeight = '0';
+          if (toggle) toggle.textContent = '+';
+        }
+      });
+    });
+  }
+
+  // Run now (elements already exist because script is at end of body)
+  initFAQ();
+
+  /* ---- Blog Read More / Less (unchanged) ---- */
   function initBlogCards() {
     document.querySelectorAll('.blog-card').forEach(card => {
       const btn = card.querySelector('.read-more-btn');
@@ -117,7 +128,7 @@
     revealEls.forEach(el => observer.observe(el));
   }
 
-  /* ---- Netlify Forms (AJAX with fallback) ---- */
+  /* ---- Netlify Forms (unchanged) ---- */
   function setupNetlifyForm(formId, successId) {
     const form = document.getElementById(formId);
     const successDiv = document.getElementById(successId);
