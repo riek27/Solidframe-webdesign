@@ -929,39 +929,6 @@
   </button>
 
   <script src="script.js"></script>
-  
-    <!-- GUARANTEED FAQ FIX for services.html – works regardless of other scripts -->
-  <script>
-    (function() {
-      // Run after everything has loaded to override any previous listeners
-      document.addEventListener('DOMContentLoaded', function() {
-        // Clone each faq-question to remove all existing event listeners
-        document.querySelectorAll('.faq-question').forEach(function(btn) {
-          var newBtn = btn.cloneNode(true);
-          btn.parentNode.replaceChild(newBtn, btn);
-          
-          newBtn.addEventListener('click', function() {
-            var faqItem = this.closest('.faq-item');
-            var toggle = this.querySelector('.faq-toggle');
-            var content = faqItem.querySelector('.faq-content');
-            if (!content) return;
-            
-            var isOpen = faqItem.classList.contains('open');
-            
-            if (!isOpen) {
-              faqItem.classList.add('open');
-              content.style.maxHeight = content.scrollHeight + 'px';
-              if (toggle) toggle.textContent = '−';
-            } else {
-              faqItem.classList.remove('open');
-              content.style.maxHeight = '0';
-              if (toggle) toggle.textContent = '+';
-            }
-          });
-        });
-      });
-    })();
-  </script>
 
   <!-- Inline Newsletter Form Handler -->
   <script>
