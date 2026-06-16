@@ -757,36 +757,6 @@
   </button>
 
   <script src="script.js"></script>
-  <script>
-  (function() {
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.faq-question').forEach(function(btn) {
-        // Clone to strip all previous event listeners
-        var newBtn = btn.cloneNode(true);
-        btn.parentNode.replaceChild(newBtn, btn);
-
-        newBtn.addEventListener('click', function() {
-          var faqItem = this.closest('.faq-item');
-          var toggle = this.querySelector('.faq-toggle');
-          var content = faqItem.querySelector('.faq-content');
-          if (!content) return;
-
-          var isOpen = faqItem.classList.contains('open');
-
-          if (!isOpen) {
-            faqItem.classList.add('open');
-            content.style.maxHeight = content.scrollHeight + 'px';
-            if (toggle) toggle.textContent = '−';
-          } else {
-            faqItem.classList.remove('open');
-            content.style.maxHeight = '0';
-            if (toggle) toggle.textContent = '+';
-          }
-        });
-      });
-    });
-  })();
-</script>
   
   <!-- Inline Newsletter Form Handler -->
   <script>
