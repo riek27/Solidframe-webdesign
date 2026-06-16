@@ -32,7 +32,7 @@
   <meta name="twitter:description" content="Answers to common Tampa contractor web design questions about pricing, process, SEO, and support.">
   <meta name="twitter:image" content="https://www.solidframeweb.com/og-faqs.jpg">
   
-  <!-- Schema.org JSON-LD -->
+  <!-- Schema.org JSON-LD (unchanged) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -428,23 +428,23 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .faq-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-.faq-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  font-size: 1.25rem;
-  line-height: 1;
-  transition: transform 0.3s ease;
-}
-.faq-item.open .faq-toggle {
-  transform: rotate(45deg);
-}
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .faq-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      font-size: 1.25rem;
+      line-height: 1;
+      transition: transform 0.3s ease;
+    }
+    .faq-item.open .faq-toggle {
+      transform: rotate(45deg);
+    }
   </style>
 </head>
 <body class="bg-white text-surface-800 antialiased">
@@ -635,29 +635,47 @@
             <h2 class="text-xl sm:text-2xl font-black text-surface-900">General Questions</h2>
           </div>
           <div class="space-y-2">
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">How long does it take to build a contractor website in Tampa?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Most Tampa contractor websites are completed within <strong>2-4 weeks from kickoff to launch</strong>. Simple websites (5-7 pages) can be delivered in as little as 10-14 business days. More complex projects with custom features, extensive service area pages, or advanced SEO may take 4-6 weeks. Our 5-step process is designed to move quickly without sacrificing quality, and we keep you updated at every stage. View our <a href="process.html" class="text-brand-600 hover:underline">full process timeline</a> for details.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">How long does it take to build a contractor website in Tampa?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Most Tampa contractor websites are completed within <strong>2-4 weeks from kickoff to launch</strong>. Simple websites (5-7 pages) can be delivered in as little as 10-14 business days. More complex projects with custom features, extensive service area pages, or advanced SEO may take 4-6 weeks. Our 5-step process is designed to move quickly without sacrificing quality, and we keep you updated at every stage. View our <a href="process.html" class="text-brand-600 hover:underline">full process timeline</a> for details.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you provide ongoing website maintenance for Tampa contractors?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes. We offer monthly maintenance plans starting at <strong>$99/month</strong> that include security monitoring, daily backups, content updates, performance optimization, and ongoing SEO improvements. On our Professional and Premium plans, maintenance also includes monthly lead-focused SEO updates and Google Business Profile optimization. This ensures your Tampa website stays secure, fast, and fully optimized to keep generating leads month after month.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you provide ongoing website maintenance for Tampa contractors?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes. We offer monthly maintenance plans starting at <strong>$99/month</strong> that include security monitoring, daily backups, content updates, performance optimization, and ongoing SEO improvements. On our Professional and Premium plans, maintenance also includes monthly lead-focused SEO updates and Google Business Profile optimization. This ensures your Tampa website stays secure, fast, and fully optimized to keep generating leads month after month.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Will my contractor website be mobile-friendly?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Absolutely. Every website we build is <strong>mobile-first and fully responsive</strong>. Since over 70% of Tampa homeowners search for contractors on their phones, we prioritize fast mobile loading speed, easy thumb-friendly navigation, click-to-call buttons, and mobile-optimized forms. All our websites pass Google's mobile-friendly test and are optimized for Core Web Vitals — critical for both rankings and conversions.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Will my contractor website be mobile-friendly?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Absolutely. Every website we build is <strong>mobile-first and fully responsive</strong>. Since over 70% of Tampa homeowners search for contractors on their phones, we prioritize fast mobile loading speed, easy thumb-friendly navigation, click-to-call buttons, and mobile-optimized forms. All our websites pass Google's mobile-friendly test and are optimized for Core Web Vitals — critical for both rankings and conversions.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Can you help with high-quality images for my Tampa contracting projects?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes. We strongly recommend using authentic, real project images from your actual work for maximum credibility and trust with Tampa homeowners. If you don't have professional photos yet, we can guide you on what to capture, help source premium stock imagery for placeholder content, and even coordinate with professional photographers in the Tampa Bay area for a project photoshoot.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Can you help with high-quality images for my Tampa contracting projects?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes. We strongly recommend using authentic, real project images from your actual work for maximum credibility and trust with Tampa homeowners. If you don't have professional photos yet, we can guide you on what to capture, help source premium stock imagery for placeholder content, and even coordinate with professional photographers in the Tampa Bay area for a project photoshoot.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">How do you handle local SEO for Tampa construction companies?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">We implement a complete <a href="services.html#tampa-seo" class="text-brand-600 hover:underline">Tampa local SEO strategy</a> including Tampa-specific keyword targeting (e.g., "roofing contractor Tampa," "remodeler Clearwater"), Google Business Profile optimization, local citations and directory listings, service-area landing pages for each Tampa Bay city you serve, local schema markup, and location-specific content. This helps your business appear when homeowners in Tampa, Brandon, Riverview, Wesley Chapel, Clearwater, St. Petersburg, and surrounding areas search for your services.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">How do you handle local SEO for Tampa construction companies?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">We implement a complete <a href="services.html#tampa-seo" class="text-brand-600 hover:underline">Tampa local SEO strategy</a> including Tampa-specific keyword targeting (e.g., "roofing contractor Tampa," "remodeler Clearwater"), Google Business Profile optimization, local citations and directory listings, service-area landing pages for each Tampa Bay city you serve, local schema markup, and location-specific content. This helps your business appear when homeowners in Tampa, Brandon, Riverview, Wesley Chapel, Clearwater, St. Petersburg, and surrounding areas search for your services.</div></div>
             </div>
-            <div class="faq-item py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">What areas of Tampa Bay do you serve?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">We serve the entire Tampa Bay metropolitan area including <strong>Tampa, Brandon, Riverview, Wesley Chapel, Carrollwood, Lutz, Clearwater, St. Petersburg, Largo, Palm Harbor, Safety Harbor, Oldsmar, Valrico, Apollo Beach, Temple Terrace</strong>, and all surrounding communities in Hillsborough and Pinellas counties. We can also create dedicated service area pages for each specific city or neighborhood you want to target with your website.</div>
+            <div class="faq-item py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">What areas of Tampa Bay do you serve?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">We serve the entire Tampa Bay metropolitan area including <strong>Tampa, Brandon, Riverview, Wesley Chapel, Carrollwood, Lutz, Clearwater, St. Petersburg, Largo, Palm Harbor, Safety Harbor, Oldsmar, Valrico, Apollo Beach, Temple Terrace</strong>, and all surrounding communities in Hillsborough and Pinellas counties. We can also create dedicated service area pages for each specific city or neighborhood you want to target with your website.</div></div>
             </div>
           </div>
         </div>
@@ -669,25 +687,40 @@
             <h2 class="text-xl sm:text-2xl font-black text-surface-900">Technical Questions</h2>
           </div>
           <div class="space-y-2">
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">What technologies do you use for Tampa contractor websites?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">We use modern, high-performance web technologies including <strong>HTML5, Tailwind CSS, and vanilla JavaScript</strong>. Every site is custom-coded for maximum performance, SEO, and scalability — no bloated page builders or slow WordPress themes. This means your Tampa contractor website loads in under 2 seconds, scores 95+ on Google PageSpeed Insights, and provides the best possible user experience for Tampa homeowners.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">What technologies do you use for Tampa contractor websites?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">We use modern, high-performance web technologies including <strong>HTML5, Tailwind CSS, and vanilla JavaScript</strong>. Every site is custom-coded for maximum performance, SEO, and scalability — no bloated page builders or slow WordPress themes. This means your Tampa contractor website loads in under 2 seconds, scores 95+ on Google PageSpeed Insights, and provides the best possible user experience for Tampa homeowners.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Will you take care of my website after launch?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes. We provide <strong>30 days of complimentary post-launch support</strong> included with every website. Beyond that, we offer ongoing maintenance and growth plans to handle updates, security patches, content changes, SEO improvements, and performance monitoring. We're your long-term Tampa web design partner — we don't disappear after launch like many agencies do.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Will you take care of my website after launch?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes. We provide <strong>30 days of complimentary post-launch support</strong> included with every website. Beyond that, we offer ongoing maintenance and growth plans to handle updates, security patches, content changes, SEO improvements, and performance monitoring. We're your long-term Tampa web design partner — we don't disappear after launch like many agencies do.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">How do you ensure my Tampa website loads quickly?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">We optimize every site using advanced <strong>image compression (WebP format), code minification, lazy loading, browser caching strategies, CDN delivery, and performance-focused managed hosting</strong>. All websites are tested to achieve fast load speeds under 2 seconds and score 95+ on Google PageSpeed Insights. Fast load speed is critical for both Google rankings and converting Tampa homeowners into leads before they bounce to a competitor.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">How do you ensure my Tampa website loads quickly?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">We optimize every site using advanced <strong>image compression (WebP format), code minification, lazy loading, browser caching strategies, CDN delivery, and performance-focused managed hosting</strong>. All websites are tested to achieve fast load speeds under 2 seconds and score 95+ on Google PageSpeed Insights. Fast load speed is critical for both Google rankings and converting Tampa homeowners into leads before they bounce to a competitor.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Is hosting included with Tampa contractor websites?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Hosting is optional and starts at <strong>$99/month</strong> for our Starter plan, which includes managed hosting, SSL security, daily backups, security monitoring, and performance optimization. You may use your own hosting, but we strongly recommend ours for best performance, security, and dedicated support. Our hosting is specifically configured for contractor websites with Tampa-focused optimization.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Is hosting included with Tampa contractor websites?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Hosting is optional and starts at <strong>$99/month</strong> for our Starter plan, which includes managed hosting, SSL security, daily backups, security monitoring, and performance optimization. You may use your own hosting, but we strongly recommend ours for best performance, security, and dedicated support. Our hosting is specifically configured for contractor websites with Tampa-focused optimization.</div></div>
             </div>
-            <div class="faq-item py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you provide SSL security for Tampa contractor websites?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes. Every website we build includes a <strong>free SSL certificate (HTTPS)</strong> to secure your site, protect visitor data, and improve your Google rankings. Google specifically favors HTTPS websites in search results, and Tampa homeowners look for the security padlock icon before submitting contact forms or calling from your site.</div>
+            <div class="faq-item py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you provide SSL security for Tampa contractor websites?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes. Every website we build includes a <strong>free SSL certificate (HTTPS)</strong> to secure your site, protect visitor data, and improve your Google rankings. Google specifically favors HTTPS websites in search results, and Tampa homeowners look for the security padlock icon before submitting contact forms or calling from your site.</div></div>
             </div>
           </div>
         </div>
@@ -699,29 +732,47 @@
             <h2 class="text-xl sm:text-2xl font-black text-surface-900">Trust & Confidence</h2>
           </div>
           <div class="space-y-2">
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you specialize in Tampa contractor websites?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes. Over <strong>80% of our clients are contractors</strong>, including roofing companies, remodelers, pool builders, and general contractors across Tampa Bay. We understand your industry deeply — from storm season lead generation for roofers to portfolio showcases for remodelers to luxury presentations for pool builders. This specialization means we build websites that actually work for your specific trade in the Tampa market.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you specialize in Tampa contractor websites?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes. Over <strong>80% of our clients are contractors</strong>, including roofing companies, remodelers, pool builders, and general contractors across Tampa Bay. We understand your industry deeply — from storm season lead generation for roofers to portfolio showcases for remodelers to luxury presentations for pool builders. This specialization means we build websites that actually work for your specific trade in the Tampa market.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Will my Tampa contractor website help generate more leads?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes — that's the entire purpose of our builds. We focus on conversion-driven layouts, strategic call-to-actions, lead capture systems, click-to-call buttons, quote request forms, and Tampa local SEO optimization. Our goal is simple: <strong>turn Tampa traffic into real jobs</strong>. On average, our clients see a 120-300% increase in leads within the first 6 months of launching their new website.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Will my Tampa contractor website help generate more leads?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes — that's the entire purpose of our builds. We focus on conversion-driven layouts, strategic call-to-actions, lead capture systems, click-to-call buttons, quote request forms, and Tampa local SEO optimization. Our goal is simple: <strong>turn Tampa traffic into real jobs</strong>. On average, our clients see a 120-300% increase in leads within the first 6 months of launching their new website.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you understand the Tampa construction industry?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes. We understand how Tampa contractors get leads, seasonal demand patterns (hurricane season for roofers, winter/spring for pool builders, year-round for remodelers in Florida), and Tampa homeowner decision-making behavior. We know the competitive landscape across Hillsborough and Pinellas counties, and we design websites that position you above your local competition in Tampa Bay.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you understand the Tampa construction industry?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes. We understand how Tampa contractors get leads, seasonal demand patterns (hurricane season for roofers, winter/spring for pool builders, year-round for remodelers in Florida), and Tampa homeowner decision-making behavior. We know the competitive landscape across Hillsborough and Pinellas counties, and we design websites that position you above your local competition in Tampa Bay.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Will my Tampa contractor website look professional and premium?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes. Every design is fully custom (no templates), modern and high-end, and built to position you as the trusted, premium contractor in Tampa. We study your top competitors in the Tampa Bay market and design a website that clearly outperforms them visually and functionally. Your website should make Tampa homeowners immediately trust that you're the best choice for their project.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Will my Tampa contractor website look professional and premium?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes. Every design is fully custom (no templates), modern and high-end, and built to position you as the trusted, premium contractor in Tampa. We study your top competitors in the Tampa Bay market and design a website that clearly outperforms them visually and functionally. Your website should make Tampa homeowners immediately trust that you're the best choice for their project.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do I own my Tampa contractor website?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes. Once the project is fully paid, <strong>you own your website design, all content, all images, and all assets</strong>. We also provide full access credentials to your hosting, domain, and any third-party accounts we set up. You're never locked in — though we hope our results make you want to stay!</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do I own my Tampa contractor website?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes. Once the project is fully paid, <strong>you own your website design, all content, all images, and all assets</strong>. We also provide full access credentials to your hosting, domain, and any third-party accounts we set up. You're never locked in — though we hope our results make you want to stay!</div></div>
             </div>
-            <div class="faq-item py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Can you redesign my existing Tampa contractor website?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Absolutely. We regularly redesign outdated contractor websites across Tampa, Brandon, Clearwater, and St. Petersburg. We preserve your existing content, images, and branding while completely transforming the design, user experience, page speed, and SEO performance. We also implement proper 301 redirects to preserve any existing search rankings. Many Tampa contractors see a <strong>200-300% increase in leads</strong> within the first 90 days of launching their redesigned Solidframe website.</div>
+            <div class="faq-item py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Can you redesign my existing Tampa contractor website?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Absolutely. We regularly redesign outdated contractor websites across Tampa, Brandon, Clearwater, and St. Petersburg. We preserve your existing content, images, and branding while completely transforming the design, user experience, page speed, and SEO performance. We also implement proper 301 redirects to preserve any existing search rankings. Many Tampa contractors see a <strong>200-300% increase in leads</strong> within the first 90 days of launching their redesigned Solidframe website.</div></div>
             </div>
           </div>
         </div>
@@ -733,25 +784,40 @@
             <h2 class="text-xl sm:text-2xl font-black text-surface-900">Industry-Specific Questions</h2>
           </div>
           <div class="space-y-2">
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you build websites for Tampa roofing companies specifically?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes! <a href="services.html#roofing-websites" class="text-brand-600 hover:underline">Tampa roofing websites</a> are one of our core specialties. We build roofing websites with emergency-focused call-to-actions for storm damage situations, dedicated insurance claim pages (critical for Florida hurricane season), prominent click-to-call buttons, before/after project galleries, Google reviews integration, and service area pages targeting Tampa neighborhoods. Our roofing websites are specifically designed to capture high-intent leads during Florida's storm season.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you build websites for Tampa roofing companies specifically?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes! <a href="services.html#roofing-websites" class="text-brand-600 hover:underline">Tampa roofing websites</a> are one of our core specialties. We build roofing websites with emergency-focused call-to-actions for storm damage situations, dedicated insurance claim pages (critical for Florida hurricane season), prominent click-to-call buttons, before/after project galleries, Google reviews integration, and service area pages targeting Tampa neighborhoods. Our roofing websites are specifically designed to capture high-intent leads during Florida's storm season.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you build websites for Tampa pool builders?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes! Pool builders are another core specialty. We create luxury-focused <a href="services.html#pool-builder-websites" class="text-brand-600 hover:underline">pool builder websites</a> that showcase custom pool designs, integrate 3D visualizers and virtual tours, and target affluent Tampa Bay neighborhoods like Carrollwood, Palm Harbor, Westchase, and Safety Harbor where homeowners invest $75K+ in custom pools. Our pool builder websites are designed to attract high-value clients and convert them into booked consultations.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you build websites for Tampa pool builders?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes! Pool builders are another core specialty. We create luxury-focused <a href="services.html#pool-builder-websites" class="text-brand-600 hover:underline">pool builder websites</a> that showcase custom pool designs, integrate 3D visualizers and virtual tours, and target affluent Tampa Bay neighborhoods like Carrollwood, Palm Harbor, Westchase, and Safety Harbor where homeowners invest $75K+ in custom pools. Our pool builder websites are designed to attract high-value clients and convert them into booked consultations.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you build websites for Tampa remodeling contractors?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes! We build portfolio-driven <a href="services.html#remodeling-websites" class="text-brand-600 hover:underline">remodeling websites</a> for Tampa kitchen and bathroom remodelers with stunning before/after galleries, detailed project pages for each service (kitchen, bathroom, whole-home), consultation booking systems, and service area pages targeting Tampa Bay neighborhoods. Our remodeling websites are designed to showcase your craftsmanship and convert Tampa homeowners into high-value clients.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you build websites for Tampa remodeling contractors?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes! We build portfolio-driven <a href="services.html#remodeling-websites" class="text-brand-600 hover:underline">remodeling websites</a> for Tampa kitchen and bathroom remodelers with stunning before/after galleries, detailed project pages for each service (kitchen, bathroom, whole-home), consultation booking systems, and service area pages targeting Tampa Bay neighborhoods. Our remodeling websites are designed to showcase your craftsmanship and convert Tampa homeowners into high-value clients.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you build websites for Tampa general contractors?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes! We create professional <a href="services.html#general-contractor-websites" class="text-brand-600 hover:underline">general contractor websites</a> for Tampa GCs with case studies, project portfolios, team credentials, licensing information, bid request forms, and separate sections for commercial and residential projects. Our general contractor websites are designed to build authority and help you win more bids across Hillsborough and Pinellas counties.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you build websites for Tampa general contractors?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes! We create professional <a href="services.html#general-contractor-websites" class="text-brand-600 hover:underline">general contractor websites</a> for Tampa GCs with case studies, project portfolios, team credentials, licensing information, bid request forms, and separate sections for commercial and residential projects. Our general contractor websites are designed to build authority and help you win more bids across Hillsborough and Pinellas counties.</div></div>
             </div>
-            <div class="faq-item py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you offer Google Ads management for Tampa contractors?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes! In addition to organic SEO, we offer <a href="services.html#digital-marketing" class="text-brand-600 hover:underline">Google Ads (PPC) management</a> specifically for Tampa contractors. We create targeted campaigns that capture homeowners actively searching for roofing, remodeling, pool construction, and general contracting services in Tampa Bay. Our Google Ads management includes keyword research, ad creation, landing page optimization, conversion tracking, and monthly reporting to ensure maximum ROI on your ad spend.</div>
+            <div class="faq-item py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you offer Google Ads management for Tampa contractors?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes! In addition to organic SEO, we offer <a href="services.html#digital-marketing" class="text-brand-600 hover:underline">Google Ads (PPC) management</a> specifically for Tampa contractors. We create targeted campaigns that capture homeowners actively searching for roofing, remodeling, pool construction, and general contracting services in Tampa Bay. Our Google Ads management includes keyword research, ad creation, landing page optimization, conversion tracking, and monthly reporting to ensure maximum ROI on your ad spend.</div></div>
             </div>
           </div>
         </div>
@@ -763,33 +829,54 @@
             <h2 class="text-xl sm:text-2xl font-black text-surface-900">Pricing & Process</h2>
           </div>
           <div class="space-y-2">
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">How much does a Tampa contractor website cost?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Our Tampa contractor websites range from <strong>$1,999 for our Lead Starter package</strong> (6 pages) to <strong>$2,999 for our most popular Lead Machine package</strong> (8 pages) to <strong>$4,999+ for the Growth Dominance package</strong> (12+ pages). Monthly hosting and maintenance ranges from $99-$197/month depending on the package. We offer flexible payment plans (typically 50% upfront, 50% at launch). See our <a href="pricing.html" class="text-brand-600 hover:underline">Pricing page</a> for full details on what's included in each package.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">How much does a Tampa contractor website cost?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Our Tampa contractor websites range from <strong>$1,999 for our Lead Starter package</strong> (6 pages) to <strong>$2,999 for our most popular Lead Machine package</strong> (8 pages) to <strong>$4,999+ for the Growth Dominance package</strong> (12+ pages). Monthly hosting and maintenance ranges from $99-$197/month depending on the package. We offer flexible payment plans (typically 50% upfront, 50% at launch). See our <a href="pricing.html" class="text-brand-600 hover:underline">Pricing page</a> for full details on what's included in each package.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Is a $1,999+ website really worth more than a cheap $500 website?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Absolutely. A $500 template website won't rank on Google for Tampa searches, won't convert homeowners into leads, and won't make your phone ring. Our websites are built as <strong>lead generation assets</strong> with Tampa-focused SEO, conversion-optimized design, and mobile-first performance. If your new website brings in just one extra roofing job ($10K-$30K) or one remodeling project ($20K-$75K) that you wouldn't have landed otherwise, the entire investment is covered — often within the first 30 days.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Is a $1,999+ website really worth more than a cheap $500 website?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Absolutely. A $500 template website won't rank on Google for Tampa searches, won't convert homeowners into leads, and won't make your phone ring. Our websites are built as <strong>lead generation assets</strong> with Tampa-focused SEO, conversion-optimized design, and mobile-first performance. If your new website brings in just one extra roofing job ($10K-$30K) or one remodeling project ($20K-$75K) that you wouldn't have landed otherwise, the entire investment is covered — often within the first 30 days.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">Do you offer payment plans for Tampa contractors?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Yes. We understand cash flow is critical in the contracting business. We offer flexible payment options — typically <strong>50% upfront and 50% at launch</strong> — so you can invest in growth without straining your working capital. For our Premium Growth Dominance package, we can also discuss custom payment arrangements over 3-6 months. Let's discuss the best option for your Tampa business on your free consultation call.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">Do you offer payment plans for Tampa contractors?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Yes. We understand cash flow is critical in the contracting business. We offer flexible payment options — typically <strong>50% upfront and 50% at launch</strong> — so you can invest in growth without straining your working capital. For our Premium Growth Dominance package, we can also discuss custom payment arrangements over 3-6 months. Let's discuss the best option for your Tampa business on your free consultation call.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">What do you need from me to get started on my Tampa website?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">We typically need your logo (if available), project photos from your recent work, a list of your services, basic business details (name, address, phone, email), and any branding guidelines. If you don't have everything ready, don't worry — we'll guide you through exactly what we need during your discovery call, and we can even help source professional images for your Tampa contracting business.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">What do you need from me to get started on my Tampa website?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">We typically need your logo (if available), project photos from your recent work, a list of your services, basic business details (name, address, phone, email), and any branding guidelines. If you don't have everything ready, don't worry — we'll guide you through exactly what we need during your discovery call, and we can even help source professional images for your Tampa contracting business.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">How many revisions are included with my Tampa website?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">We offer <strong>unlimited revisions on homepage design</strong> until you're 100% satisfied, and minor revisions during the development phase at no extra cost. Major structural changes after approval may incur additional costs, but we work closely with you throughout the process to ensure the final website perfectly matches your vision. Our goal is your complete satisfaction.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">How many revisions are included with my Tampa website?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">We offer <strong>unlimited revisions on homepage design</strong> until you're 100% satisfied, and minor revisions during the development phase at no extra cost. Major structural changes after approval may incur additional costs, but we work closely with you throughout the process to ensure the final website perfectly matches your vision. Our goal is your complete satisfaction.</div></div>
             </div>
-            <div class="faq-item border-b border-surface-100 py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">How long does Tampa SEO take to show results?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">Most Tampa contractors begin seeing measurable SEO improvements within <strong>60-90 days</strong>, including increased Google Business Profile visibility and higher rankings for local search terms. Significant organic traffic growth typically occurs within 3-6 months. However, our websites are built with SEO foundations from day one, so you'll start generating leads immediately from the optimized design and conversion elements while organic rankings continue to climb.</div>
+            <div class="faq-item border-b border-surface-100 py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">How long does Tampa SEO take to show results?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">Most Tampa contractors begin seeing measurable SEO improvements within <strong>60-90 days</strong>, including increased Google Business Profile visibility and higher rankings for local search terms. Significant organic traffic growth typically occurs within 3-6 months. However, our websites are built with SEO foundations from day one, so you'll start generating leads immediately from the optimized design and conversion elements while organic rankings continue to climb.</div></div>
             </div>
-            <div class="faq-item py-4 cursor-pointer">
-              <div class="flex justify-between items-start gap-4"><h3 class="text-sm font-bold text-surface-900 pr-2">What happens after my Tampa website launches?</h3><div class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</div></div>
-              <div class="faq-content text-surface-500 text-sm leading-relaxed">After launch, we provide 30 days of complimentary support to ensure everything runs smoothly. Beyond that, we offer ongoing maintenance plans that include continuous SEO improvements, content updates, security monitoring, performance optimization, and strategic guidance. We also submit your sitemap to Google Search Console, set up analytics tracking, and provide monthly reports so you can see exactly how your Tampa website is performing.</div>
+            <div class="faq-item py-4">
+              <button class="faq-question w-full flex justify-between items-center text-left focus:outline-none">
+                <h3 class="text-sm font-bold text-surface-900 pr-4">What happens after my Tampa website launches?</h3>
+                <span class="faq-toggle w-7 h-7 bg-brand-50 rounded-full flex items-center justify-center text-brand-600 text-lg font-light">+</span>
+              </button>
+              <div class="faq-content"><div class="pt-3 text-surface-500 text-sm leading-relaxed">After launch, we provide 30 days of complimentary support to ensure everything runs smoothly. Beyond that, we offer ongoing maintenance plans that include continuous SEO improvements, content updates, security monitoring, performance optimization, and strategic guidance. We also submit your sitemap to Google Search Console, set up analytics tracking, and provide monthly reports so you can see exactly how your Tampa website is performing.</div></div>
             </div>
           </div>
         </div>
@@ -883,7 +970,7 @@
 
   <script src="script.js"></script>
   
-    // Netlify Newsletter Form Handler
+  <script>
     const newsletterForm = document.querySelector('form[name="newsletter"]');
     if (newsletterForm) {
       newsletterForm.addEventListener('submit', function(e) {
