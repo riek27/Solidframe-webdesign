@@ -1,6 +1,6 @@
 /**
  * Solidframe Web - Global JavaScript
- * Includes robust Netlify form handling + green pop‑ups
+ * Includes robust Netlify form handling + fixed FAQ accordion
  */
 (function () {
   'use strict';
@@ -53,23 +53,25 @@
     });
   });
 
-  /* ---- FAQ Accordion ---- */
-  function initFaqItems() {
-    document.querySelectorAll('.faq-item').forEach(item => {
-      const toggleBtn = item.querySelector('.faq-toggle');
-      if (!toggleBtn || !item.querySelector('.faq-content')) return;
-      const newToggle = toggleBtn.cloneNode(true);
-      toggleBtn.parentNode.replaceChild(newToggle, toggleBtn);
-      item.classList.remove('active');
-      newToggle.textContent = '+';
-      newToggle.addEventListener('click', (e) => {
-        e.stopPropagation();
-        item.classList.toggle('active');
-        newToggle.textContent = item.classList.contains('active') ? '−' : '+';
-      });
+  /* ---- FAQ Accordion (UNIFIED - uses .open class) ---- */
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', function() {
+      const faqItem = this.closest('.faq-item');
+      const toggle = this.querySelector('.faq-toggle');
+      const isOpen = faqItem.classList.contains('open');
+      // Optional: close other FAQ items (remove if you want multiple open)
+      // document.querySelectorAll('.faq-item.open').forEach(item => {
+      //   if (item !== faqItem) {
+      //     item.classList.remove('open');
+      //     item.querySelector('.faq-toggle').textContent = '+';
+      //   }
+      // });
+      faqItem.classList.toggle('open');
+      if (toggle) {
+        toggle.textContent = isOpen ? '+' : '−';
+      }
     });
-  }
-  initFaqItems();
+  });
 
   /* ---- Blog Read More / Less ---- */
   function initBlogCards() {
@@ -127,7 +129,6 @@
       const formData = new FormData(form);
       const params = new URLSearchParams(formData).toString();
 
-      // Use fetch to try AJAX
       try {
         const res = await fetch('/', {
           method: 'POST',
@@ -136,12 +137,10 @@
         });
 
         if (res.ok) {
-          // AJAX succeeded – show green pop‑up, hide form
           form.style.display = 'none';
           successDiv.classList.remove('hidden');
           successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-          // Auto‑hide after 5 seconds and reset form
           setTimeout(() => {
             successDiv.classList.add('hidden');
             form.style.display = '';
@@ -149,18 +148,14 @@
           }, 5000);
           return;
         }
-        // If status not ok, throw to fallback
         throw new Error(`Status ${res.status}`);
       } catch (err) {
-        // AJAX failed – show pop‑up, then fallback submit to guarantee delivery
         console.warn('AJAX failed, using fallback:', err);
 
-        // Show green pop‑up briefly
         form.style.display = 'none';
         successDiv.classList.remove('hidden');
         successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-        // After a short delay, submit normally (will redirect to Netlify thank‑you page)
         setTimeout(() => {
           form.submit();
         }, 1500);
@@ -168,7 +163,6 @@
     });
   }
 
-  // Activate both forms (they may or may not exist on the current page)
   setupNetlifyForm('quoteForm', 'formDone');
   setupNetlifyForm('contactForm', 'formSuccess');
 
@@ -189,29 +183,3 @@
     backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
 })();
-// FAQ Accordion Toggle
-document.addEventListener('DOMContentLoaded', function() {
-  const faqButtons = document.querySelectorAll('.faq-question');
-
-  faqButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const faqItem = this.closest('.faq-item');
-      const toggle = this.querySelector('.faq-toggle');
-      const isOpen = faqItem.classList.contains('open');
-
-      // Close all other items (optional, remove if you want multiple open)
-      // document.querySelectorAll('.faq-item.open').forEach(item => {
-      //   if (item !== faqItem) {
-      //     item.classList.remove('open');
-      //     item.querySelector('.faq-toggle').textContent = '+';
-      //   }
-      // });
-
-      // Toggle current item
-      faqItem.classList.toggle('open');
-      if (toggle) {
-        toggle.textContent = isOpen ? '+' : '−';
-      }
-    });
-  });
-});
