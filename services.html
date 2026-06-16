@@ -936,32 +936,37 @@
 
   <script src="script.js"></script>
   
-  <!-- FAQ Accordion JavaScript (integrated) -->
+    <!-- GUARANTEED FAQ FIX for services.html – works regardless of other scripts -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const faqButtons = document.querySelectorAll('.faq-question');
-      
-      faqButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          const faqItem = this.closest('.faq-item');
-          const toggle = this.querySelector('.faq-toggle');
-          const isOpen = faqItem.classList.contains('open');
+    (function() {
+      // Run after everything has loaded to override any previous listeners
+      document.addEventListener('DOMContentLoaded', function() {
+        // Clone each faq-question to remove all existing event listeners
+        document.querySelectorAll('.faq-question').forEach(function(btn) {
+          var newBtn = btn.cloneNode(true);
+          btn.parentNode.replaceChild(newBtn, btn);
           
-          // Optional: close other items when one opens (uncomment if desired)
-          // document.querySelectorAll('.faq-item.open').forEach(item => {
-          //   if (item !== faqItem) {
-          //     item.classList.remove('open');
-          //     item.querySelector('.faq-toggle').textContent = '+';
-          //   }
-          // });
-          
-          faqItem.classList.toggle('open');
-          if (toggle) {
-            toggle.textContent = isOpen ? '+' : '−';
-          }
+          newBtn.addEventListener('click', function() {
+            var faqItem = this.closest('.faq-item');
+            var toggle = this.querySelector('.faq-toggle');
+            var content = faqItem.querySelector('.faq-content');
+            if (!content) return;
+            
+            var isOpen = faqItem.classList.contains('open');
+            
+            if (!isOpen) {
+              faqItem.classList.add('open');
+              content.style.maxHeight = content.scrollHeight + 'px';
+              if (toggle) toggle.textContent = '−';
+            } else {
+              faqItem.classList.remove('open');
+              content.style.maxHeight = '0';
+              if (toggle) toggle.textContent = '+';
+            }
+          });
         });
       });
-    });
+    })();
   </script>
 
   <!-- Inline Newsletter Form Handler -->
@@ -987,3 +992,5 @@
   </script>
 </body>
 </html>
+
+
