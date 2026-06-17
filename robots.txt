@@ -1,5 +1,5 @@
 # robots.txt for Solidframe Web - Tampa Web Design Agency
-# https://www.solidframeweb.com
+# # https://solidframeweb.com
 
 User-agent: *
 Allow: /
@@ -11,7 +11,7 @@ Disallow: /*?*=
 Disallow: /*&
 
 # Sitemap
-Sitemap: https://www.solidframeweb.com/sitemap.xml
+Sitemap: https://solidframeweb.com/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1
